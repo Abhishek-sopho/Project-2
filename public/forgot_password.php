@@ -1,6 +1,6 @@
-<!doctype html>
+
 <html>
-	<style>
+    <style>
 		form {
     border: 3px solid #f1f1f1;
 }
@@ -64,14 +64,13 @@ span.psw {
     }
 }
 	</style>
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<body>
-		<div class="container">
+<body>   
+<div class="container">
 	    <div class="header">
 	    	<div class="header_top">
 	           	<div class="header_top_res">
 				<welcome align="center">
-					<p>Welcome..!!</p>
+					<p>Forgot Password</p>
 				</welcome>
 			    </div>
 		    </div>
@@ -81,35 +80,13 @@ span.psw {
 		             </a>
 		       </div>
 		       <div class="login">
-		            
-		              <form action="store.php">
-  
-                      <div class="login_form">
-                        <label><b>Email</b></label>
+		           
+                       <label><b>Email</b></label>
                         <input type="text" placeholder="Enter mail-id" name="email" required>  
                        <label><b>Username</b></label>
                         <input type="text" placeholder="Enter Username" name="uname" required>
-
-                      <label><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        
-                       <label><b>Re-type Password</b></label>
-                        <input type="password" placeholder="Re-type Password" name="rpsw" required>
-                       <label><b>Gender</b></label>
-                       <br>
-                       <form action="">
-                       <input type="radio" name="gender" value="male"> Male<br>
-                       <input type="radio" name="gender" value="female"> Female<br>
-                       <input type="radio" name="gender" value="other"> Other
-                       </form>
-                      
-                       
-                        <button type="submit">SignUp</button> 
-                      </div>
-                      </form>
-		       </div>
-		 </div>
-		<?php include ('footer.php'); ?>
-		</div>
-	</body>
+                       <button type="submit">SEND ME MY PASSWORD</button>
+</div>
+</body>
 </html>
+<?php include ('footer.php'); ?>

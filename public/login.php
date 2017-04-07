@@ -94,7 +94,7 @@ span.psw {
                       <button type="submit">Login</button>
                         <input type="checkbox" checked="checked"> Remember me
                       
-                        <span class="psw">Forgot <a href="#">password?</a></span>
+                        <span class="psw">Forgot <a href="forgot_password.php">password?</a></span>
                         <h3>new user?</h3>
                         <br>
                         <h3><a href="register.php">Sign Up</a></h3>
