@@ -96,7 +96,9 @@ span.psw {
                       
                         <span class="psw">Forgot <a href="#">password?</a></span>
                         <h3>new user?</h3>
-                        <button type="submit">SignUp</button> 
+                        <br>
+                        <h3><a href="register.php">Sign Up</a></h3>
+                        </br>
                       </div>
                       </form>
 		       </div>
