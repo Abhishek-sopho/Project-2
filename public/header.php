@@ -19,7 +19,7 @@
 		             	<img src="images.png" alt="OLX" style="width:62px;height:62px;border:0;">
 		             </a>
 		       </div>
- 
+		       <form>
 		           <fieldset>
 		               <div class "college-search">
 		                   <input type="text" name="college_search" placeholder="College Search">
