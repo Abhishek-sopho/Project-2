@@ -82,7 +82,7 @@ span.psw {
 		       </div>
 		       <div class="login">
 		            
-		              <form action="/action_page.php">
+		              <form action="../logindb.php">
   
                       <div class="login_form">
                        <label><b>Username</b></label>
