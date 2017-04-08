@@ -1,6 +1,6 @@
 <?php
 
-include "dbconn.php";
+require "dbconn.php";
 
 $name = $_POST["uname"];
 $pass = $_POST["psw"];
@@ -23,7 +23,7 @@ echo "success";
 }
 
 
-// header("Location: login.html");
+header("Location: ../public/store.php");
 
 ?>
 
