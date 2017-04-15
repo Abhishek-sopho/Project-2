@@ -82,7 +82,9 @@ span.psw {
 		       </div>
 		       <div class="login">
 		            
-		              <form action="store.php">
+
+		              <form method="POST" action="../model/userdb.php">
+		              
   
                       <div class="login_form">
                         <label><b>Email</b></label>

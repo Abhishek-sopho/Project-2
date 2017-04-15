@@ -82,7 +82,7 @@ span.psw {
 		       </div>
 		       <div class="login">
 		            
-		              <form action="/action_page.php">
+		              <form method ="POST" action="../model/logindb.php">
   
                       <div class="login_form">
                        <label><b>Username</b></label>
@@ -91,7 +91,7 @@ span.psw {
                       <label><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
         
-                      <button type="submit">Login</button>
+                      <button type="submit" name="submit">Login</button>
                         <input type="checkbox" checked="checked"> Remember me
                       
                         <span class="psw">Forgot <a href="forgot_password.php">password?</a></span>
