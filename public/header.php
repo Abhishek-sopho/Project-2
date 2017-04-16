@@ -9,7 +9,7 @@
 	        <div class="header_top">
 	           	<div class="header_top_res">
 				<p>
-					Welcome, <strong>USER NAME</strong>
+					Welcome, <strong><?php echo $_POST['uname'];?></strong>
 					[<a href="myprofile.php"> My Profile </a>| <a href="index.php"> Log out </a> ]
 				</p>
 			    </div>
@@ -23,6 +23,7 @@
 		           <fieldset>
 		               <div class "college-search">
 		                   <input type="text" name="college_search" placeholder="College Search">
+		                   <input type="submit" name="query">
 		               </div>
 		              
 		           </fieldset>

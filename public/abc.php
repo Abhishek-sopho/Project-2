@@ -1,17 +1,3 @@
-<?php  include('header.php'); ?>
-<div class="container">
-	<a href='insert.php'>Sell Item</a><br>
-<ul>
-		
-	<li><a href=''>All</a></li>
-	<li><a href=''>Books</a></li>
-	<li><a href=''>Clothing</a></li>
-	<li><a href=''>Electronics</a></li>
-	<li><a href=''>Furniture</a></li>
-	<li><a href=''>Sports</a></li>
-	<li><a href=''>Vehicle</a></li>
-	<li><a href=''>Others</a></li>
-</ul>
 
 <table border='2px' align ='center' width='100%' >
 	<tr align='center'>
@@ -47,13 +33,7 @@ $sql= "select * from collegedb where id ='$college'";
 				$runs = mysqli_query($con,$sql);
 				
 				$rows = mysqli_fetch_array($runs);
-				$collegename = $rows['name'];
-
-
-$query = "select * from items where id ='$category'";
-			$runns = mysqli_query($con,$query);
-			$rowsss = mysqli_fetch_array($runns);
-			$catname = $rowsss['category'];	
+				$collegename = $rows['name'];	
                 
 //echo $name;
 //echo "<img src='images/$image' width='125px' height='125px'>";
@@ -67,7 +47,7 @@ $query = "select * from items where id ='$category'";
 <td><?php echo $price; ?></td>
 <td><?php echo $collegename; ?></td>
 
-<td><?php echo $catname; ?></td>
+<td><?php echo $category; ?></td>
 
 <td>
 	<?php 
@@ -76,7 +56,7 @@ if(isset($_GET['id'])){
 	echo $contact;
 }
 else{
-	echo "<a href=\"store.php?id='get'\">contact seller</a>";
+	echo "<a href=\"abc.php?id='get'\">contact seller</a>";
 }
 
 	/*
@@ -102,4 +82,3 @@ else{
 
 ?>
 </table>
-</div>
