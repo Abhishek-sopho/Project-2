@@ -86,7 +86,9 @@ span.psw {
                        <label><b>Username</b></label>
                         <input type="text" placeholder="Enter Username" name="uname" required>
                        <button type="submit">SEND ME MY PASSWORD</button>
-</div>
+              </div>
+              </div>
+              </div>
 </body>
 </html>
 <?php include ('footer.php'); ?>

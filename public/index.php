@@ -22,11 +22,12 @@
 		        
 		</div> 
 	</div>
-	<div align="center">
+	<div class="strt" align="center">
 		<button class="button" style="vertical-align:middle" onclick="window.location.href='/public/login.php'"><span>Sign in</span></button>
 		<button class="button" style="vertical-align:middle" onclick="window.location.href='/public/store.php'"><span>Store</span></button>
-	</div>	
-        <?php include ('footer.php'); ?>
+	</div>
+
 	</body>
 
 </html>
+      <?php include ('footer.php'); ?>

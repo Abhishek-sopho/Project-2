@@ -103,7 +103,7 @@ span.psw {
                       </form>
 		       </div>
 		 </div>
-		<?php include ('footer.php'); ?>
 		</div>
 	</body>
 </html>
+		<?php include ('footer.php'); ?>

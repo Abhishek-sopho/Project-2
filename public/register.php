@@ -99,11 +99,10 @@ span.psw {
                         <input type="password" placeholder="Re-type Password" name="rpsw" required>
                        <label><b>Gender</b></label>
                        <br>
-                       <form action="">
                        <input type="radio" name="gender" value="male"> Male<br>
                        <input type="radio" name="gender" value="female"> Female<br>
                        <input type="radio" name="gender" value="other"> Other
-                       </form>
+                      
                       
                        
                         <button type="submit">SignUp</button> 
@@ -111,7 +110,8 @@ span.psw {
                       </form>
 		       </div>
 		 </div>
-		<?php include ('footer.php'); ?>
+
 		</div>
 	</body>
 </html>
+		<?php include ('footer.php'); ?>
