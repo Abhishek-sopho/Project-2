@@ -103,3 +103,4 @@ else{
 ?>
 </table>
 </div>
+<?php include ('footer.php'); ?>
