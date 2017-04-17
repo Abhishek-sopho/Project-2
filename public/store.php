@@ -3,17 +3,52 @@
 	<a href='insert.php'>Sell Item</a><br>
 <ul>
 		
-	<li><a href=''>All</a></li>
-	<li><a href=''>Books</a></li>
-	<li><a href=''>Clothing</a></li>
-	<li><a href=''>Electronics</a></li>
-	<li><a href=''>Furniture</a></li>
-	<li><a href=''>Sports</a></li>
-	<li><a href=''>Vehicle</a></li>
-	<li><a href=''>Others</a></li>
+	<li><a href="store.php?category=8">All</a></li>
+	<li><a href="store.php?category=1">Books</a></li>
+	<li><a href="store.php?category=2">Clothing</a></li>
+	<li><a href="store.php?category=4">Electronics</a></li>
+	<li><a href="store.php?category=5">Furniture</a></li>
+	<li><a href="store.php?category=6">Sports</a></li>
+	<li><a href="store.php?category=3">Vehicle</a></li>
+	<li><a href="store.php?category=7">Others</a></li>
 </ul>
 
-<table border='2px' align ='center' width='100%' >
+
+
+
+<?php
+
+	$category = $_GET['category'];
+    $cat = $category;
+
+$con = mysqli_connect("localhost","root","abhishek","Project2");
+
+	$qry = "select * from buy where category='$category'";
+
+if($category==8 || (!isset($_GET['category'])) ){
+	$qry = "select * from buy";
+}
+
+if(isset($_GET['submit'])){
+
+	$collegeee=$_GET['collegeee'];
+	$qw = "select id from collegedb where name = '$collegeee'";
+	$qwe = mysqli_query($con,$qw);
+	$r = mysqli_fetch_array($qwe);
+	$coll = $r['id'];
+	$qry ="select * from buy where college = '$coll'";
+}
+
+
+
+$run = mysqli_query($con,$qry);
+$count =mysqli_num_rows($run);
+if($count==0){
+	echo "no items yet :(";
+	exit();
+}
+
+echo "<table border='2px' align ='center' width='100%' >
 	<tr align='center'>
  
  <th>image</th>
@@ -22,16 +57,7 @@
  <th>college</th>
  <th>category</th>
  <th>contact</th>
-</tr>
-
-
-<?php
-
-$con = mysqli_connect("localhost","root","abhishek","Project2");
-
-$qry = "select * from buy";
-$run = mysqli_query($con,$qry);
-
+</tr>";
 
 while($row = mysqli_fetch_array($run)){
 	//echo "dfss";
@@ -99,6 +125,7 @@ else{
 
 <?php
 }
+
 
 ?>
 </table>

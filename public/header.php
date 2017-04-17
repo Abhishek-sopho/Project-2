@@ -22,8 +22,22 @@
 		       <form>
 		           <fieldset>
 		               <div class "college-search">
-		                   <input type="text" name="college_search" placeholder="College Search">
-		                   <input type="submit" name="query">
+		                   <form>
+		<select name=collegeee>
+			<option value='0' selected disabled>Select College</option>
+				<option value=0>All</option>
+			<?php
+				$con = mysqli_connect("localhost","root","abhishek","Project2");
+				$sql= "select * from collegedb";
+				$run = mysqli_query($con,$sql);
+				while($row=mysqli_fetch_array($run)){
+				echo "<option>".$row['name']."</option>";
+
+}
+ ?>
+		</select>
+		<input type=submit name="submit">
+	</form>
 		               </div>
 		              
 		           </fieldset>
