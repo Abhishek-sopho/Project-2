@@ -1,4 +1,5 @@
-
+<?php include ('header.php'); ?>
+<div class="container">
 <table border='2px' align ='center' width='100%' >
 	<tr align='center'>
  
@@ -9,6 +10,7 @@
  <th>category</th>
  <th>contact</th>
 </tr>
+
 
 
 <?php
@@ -82,3 +84,5 @@ else{
 
 ?>
 </table>
+</div>
+<?php include ('footer.php'); ?>
