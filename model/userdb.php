@@ -1,16 +1,26 @@
 <?php
 
-require "dbconn.php";
+//require "dbconn.php";
+
+$dbconnect = mysqli_connect("localhost","root","abhishek","Project2");
+if($dbconnect)
+{
+
+echo "hi";
+}
 
 $email = $_POST["email"];
 $name = $_POST["uname"];
 $pass = $_POST["psw"];
 $repass = $_POST["rpsw"];
 
+
 if($pass != $repass)
 {
-	<script>alert("Password do not match")</script>
+	
+	echo "<script>alert('Password do not match')</script>" ;
 	header("Location: ../public/register.php");
+	exit();
 	
 }
 else
